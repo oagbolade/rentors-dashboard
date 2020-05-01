@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Rentors - Onboarding</title>
+    <link rel="stylesheet" href="../assets/vendors/iconfonts/mdi/css/materialdesignicons.css">
+    <link rel="stylesheet" href="../assets/vendors/css/vendor.addons.css">
+    <link rel="stylesheet" href="../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+</head>
+
+<body class="header-fixed" style="background: linear-gradient(to right, #009933 0%, #227844 100%);">
+
+    <div class="authentication-theme auth-style_4 mt-5">
+        <div class="row inner-wrapper">
+            <div class="col-lg-12 mx-auto form-section">
+                <div class="logo-section">
+                    <a href="login.html" class="logo"><img src="https://res.cloudinary.com/goodnesskay/image/upload/v1575417538/w-logo_oneimz.svg" alt="logo"></a>
+                    <br>
+                    <h2 class="text-white">We want to help you get your property to Rentors' community faster</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="grid">
+                    <div class="step-wzard-container" id="smartwizard-default">
+                        <ul>
+                            <li><a href="#step-1">Step 1<br><small>Personal Information</small></a></li>
+                            <li><a href="#step-2">Step 2<br><small>Banking Details</small></a></li>
+                        </ul>
+                        
+                        <div class="step-container-outer">
+                            <div id="step-1" class="step-content">
+
+                                <div class="row">
+                                    
+                                    <div class="form-group col-lg-4">
+                                        <label for="gender" class="col-lg-12 control-label">Gender <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control" ng-model="model.Pensioner.gender">
+                                                <option value=""></option>
+
+                                                <option ng-repeat="gender in model.Gender" value="M">Male</option>
+
+                                                <option ng-repeat="gender in model.Gender" value="F">Female</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-lg-4">
+                                        <label for="dateOfBirth" class="col-lg-12 control-label">D.O.B <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <input type="date" class="form-control" placeholder="Date of birth" name="dateOfBirth" ng-model="model.Pensioner.dateOfBirth" required="" >
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-lg-4">
+                                        <label for="dateOfBirth" class="col-lg-12 control-label">Marital Status <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control">
+                                                <option value=""></option>
+                                                <option ng-repeat="m in model.MaritalStatus" value="MD">Married</option>
+                                                <option ng-repeat="m in model.MaritalStatus" value="SG">Single </option>
+                                                <option ng-repeat="m in model.MaritalStatus" value="WD">Widow</option>
+                                                <option ng-repeat="m in model.MaritalStatus" value="SP">Separated</option>
+                                                <option ng-repeat="m in model.MaritalStatus" value="DV">Divorced</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div id="step-2" class="step-content">
+                                <div class="row">
+                                    <div class="form-group col-lg-4">
+                                        <label for="region" class="col-lg-12 control-label">BVN <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <input type="text" class="form-control" placeholder="bvn" name="bvn" autocomplete="off" required="" ng-model="model.Pensioner.bvn" minlength="11" maxlength="11">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-lg-4">
+                                        <label for="region" class="col-lg-12 control-label">Account Number <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <input type="text" class="form-control" placeholder="Account Number" name="accNum" autocomplete="off" required="" ng-model="model.Pensioner.bankAccountNumber" minlength="10" maxlength="10" style="">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-lg-4">
+                                        <label for="region" class="col-lg-12 control-label">Bank <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control">
+                                                <option value="?" selected="selected"></option>
+                                                <option label="ACCESS BANK PLC" >ACCESS BANK PLC</option>
+                                                <option label="CITI BANK" >CITI BANK</option>
+                                                <option label="DIAMOND BANK PLC" >DIAMOND BANK PLC</option>
+                                                <option label="ECOBANK NIGERIA PLC" >ECOBANK NIGERIA PLC</option>
+                                                <option label="FIDELITY BANK PLC" >FIDELITY BANK PLC</option>
+                                                <option label="FIRST BANK OF NIGERIA PLC" >FIRST BANK OF NIGERIA PLC</option>
+                                                <option label="FIRST CITY MONUMENT BANK PLC" >FIRST CITY MONUMENT BANK PLC</option>
+                                                <option label="GUARANTY TRUST BANK PLC" >GUARANTY TRUST BANK PLC</option>
+                                                <option label="HERITAGE BANK" >HERITAGE BANK</option>
+                                                <option label="JAIZ BANK" >JAIZ BANK</option>
+                                                <option label="KEYSTONE BANK PLC" >KEYSTONE BANK PLC</option>
+                                                <option label="POLARIS BANK" >POLARIS BANK</option>
+                                                <option label="PROVIDUS BANK" >PROVIDUS BANK</option>
+                                                <option label="STANBIC IBTC BANK PLC" >STANBIC IBTC BANK PLC</option>
+                                                <option label="STANDARD CHARTERED BANK PLC" >STANDARD CHARTERED BANK PLC</option>
+                                                <option label="STERLING BANK PLC" >STERLING BANK PLC</option>
+                                                <option label="SUNTRUST BANK" >SUNTRUST BANK</option>
+                                                <option label="UNION BANK OF NIGERIA PLC" >UNION BANK OF NIGERIA PLC</option>
+                                                <option label="UNITED BANK FOR AFRICA PLC" >UNITED BANK FOR AFRICA PLC</option>
+                                                <option label="UNITY BANK PLC" >UNITY BANK PLC</option>
+                                                <option label="WEMA BANK PLC" >WEMA BANK PLC</option>
+                                                <option label="ZENITH INTERNATIONAL BANK PLC" >ZENITH INTERNATIONAL BANK PLC</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-lg-4">
+                                        <label for="firstName" class="col-lg-12 control-label">Bank Account Name <span class="text-danger"> *</span></label>
+                                        <div class="col-lg-10">
+                                            <input type="text" class="form-control" placeholder="Bank Account Name" name="" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4 offset-lg-4">
+                                        <a href="index.html" class="btn btn-primary btn-block">Finish Setup</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/vendors/js/core.js"></script>
+    <script src="../assets/vendors/js/vendor.addons.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
